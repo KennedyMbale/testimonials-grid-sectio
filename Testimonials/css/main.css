@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ecf2f8;
+}
+
+.testimonials-container {
+    padding: 5% 3%;
+}
+
+.monial-1 {
+    background-color: #7541c8;
+    color: #ffffff;
+    position: relative;
+    z-index: -2;
+}
+
+.monial-2 {
+    background-color: #48556a;
+    color: #ffffff;
+}
+
+.monial-3,
+.monial-5 {
+    background-color: #ffffff;
+    color: #48556a;
+}
+
+.monial-4 {
+    background-color: #19212e;
+    color: #ffffff;
+}
+
+.monial-grid {
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.monial-grid p {
+    opacity: 70%;
+}
+
+.header img {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.header .name {
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.monial-grid h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.quote {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    z-index: -1;
+}
+
+@media (min-width: 576px) {
+    .testimonials-container,
+    .main-left,
+    .top,
+    .bottom {
+        display: flex;
+    }
+    .testimonials-container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .main-left {
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+    .top,
+    .bottom {
+        flex-basis: 50%;
+    }
+    .monial-5 {
+        flex-basis: 20%;
+    }
+    .monial-1,
+    .monial-4 {
+        flex-basis: 65%;
+    }
+    .monial-2,
+    .monial-3 {
+        flex-basis: 35%;
+    }
+    .main-left .monial-grid {
+        margin-right: 15px;
+    }
+}
